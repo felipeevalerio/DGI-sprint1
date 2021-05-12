@@ -5,3 +5,15 @@ for(let link of links){
         link.classList.add("actived")
     }
 }   
+
+const roles = document.querySelectorAll(".profile-role button");
+for(let role of roles){
+    role.addEventListener("click",()=> {
+        
+        if(role.classList.contains("actived"))
+            role.classList.remove("actived");
+        else
+            role.classList.add("actived");
+            
+    })
+}

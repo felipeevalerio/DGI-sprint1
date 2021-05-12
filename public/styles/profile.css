@@ -1,0 +1,136 @@
+.container-profile{
+    display:grid;
+    grid-template-columns: 1fr 210px;
+    width:100%;
+
+}
+
+.profile{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+}
+
+.profile-first-part{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 35%;
+    height: 155px;
+    display:flex;
+    justify-self: center;
+    border: 4px solid var(--green);
+}
+
+.profile-image img{
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.profile-role{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-role button{
+    padding: 1.6rem 3.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.6rem;
+    width: 50%;
+    border: 1.8px solid #363F5F;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 300ms ease;
+}
+
+button .content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.profile-role button.actived{
+    border-color: var(--green);
+}
+
+.profile-role button p{
+    color: var(--purple);
+    font-size: 1.4rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.profile-role button img{
+    width: 36px;
+    height: 28px;
+}
+
+
+.profile-second-part {
+    display: grid;
+    grid-template-rows: repeat(3,120px);
+    align-self: flex-start;
+
+}
+
+.profile-second-part h1{
+    display: flex;
+    margin-top: 1.2rem;
+}
+
+.field{
+    font-size: 1.6rem;
+    color: var(--purple);
+}
+
+.about.field textarea{
+    resize:none;
+    height: 240px;
+}
+
+.field textarea,
+.field input{
+    width: 90%;
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
+    margin-top: 1.2rem;
+    outline:none;
+    border: 1px solid #363F5F;
+}
+
+
+
+.container-profile .projects,
+.container-profile .profile{
+    padding:3.2rem 0;
+    justify-content:center;
+    width: 100%;
+}
+
+.container-profile .projects{
+    background: #e7e7e7;
+    display:flex;
+}
+
+.container-profile .projects h3{
+    font-size: 1.6rem;
+    color: var(--purple);
+
+}
+
+

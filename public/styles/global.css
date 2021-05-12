@@ -27,3 +27,13 @@ body{
     overflow:hidden;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 87vh;
+    margin-top: 13vh;
+}
+
+.container{
+    width: 100%;
+}
