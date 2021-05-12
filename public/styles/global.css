@@ -1,0 +1,29 @@
+:root{
+    --background:#F0F2F5;
+    --purple:#5429CC;
+    --green:#33CC95;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+    text-decoration: none;  
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins" , Helvetica, sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    background: var(--background);
+    overflow:hidden;
+}
+
