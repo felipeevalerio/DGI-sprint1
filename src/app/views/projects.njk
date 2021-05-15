@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block page %} 
-<h1>Meu Perfil</h1>
+<h1>Publicações</h1>
 {% endblock page%}
 
 {% block content %}
@@ -53,19 +53,39 @@
     <div class="projects">
         <h3>Últimos Projetos</h3>
         <div class="projects-show">
-            {% for project in projects %}
             <div class="project">
                 <div class="project-img">
                     <a href="#">
-                        <img src="{{project.image}}" alt="">
+                        <img src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_cross_10656.jpg" alt="">
                     </a>
                 </div>
                 <div class="project-info">
-                    <p><strong>{{project.title}}</strong></p>
-                    <p><strong>Data:</strong>  {{project.date}}</p>
+                    <p><strong>Rocket League</strong></p>
+                    <p><strong>Data:</strong>  12/02/21</p>
                 </div>
             </div>
-            {% endfor %}
+            <div class="project">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="https://images4.alphacoders.com/100/thumb-1920-1004017.png" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <p><strong>Sekiro</strong></p>
+                    <p><strong>Data:</strong>  27/03/21</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="https://s2.glbimg.com/f5UpJFXD2wQR3-HMNa927HxTd7c=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/r/7/mSrPjAQTq0uFHNHiBjpQ/fifa-21-intros.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <p><strong>Fifa 21</strong></p>
+                    <p><strong>Data:</strong>  11/01/21</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
