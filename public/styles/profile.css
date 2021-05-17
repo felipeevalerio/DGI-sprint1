@@ -127,7 +127,6 @@ button .content{
 }
 
 .about.field textarea{
-    resize:none;
     height: 240px;
 }
 

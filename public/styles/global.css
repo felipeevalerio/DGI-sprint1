@@ -2,6 +2,7 @@
     --background:#F0F2F5;
     --purple:#5429CC;
     --green:#33CC95;
+    --text:#363F5F;
 }
 
 *{
@@ -34,6 +35,14 @@ main{
     margin-top: 13vh;
 }
 
+textarea{
+    resize:none;
+    outline: none;
+}
+
+button{
+    outline: none;
+}
 .container{
     width: 100%;
 }

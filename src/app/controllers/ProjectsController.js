@@ -8,8 +8,18 @@ module.exports = {
     projectsPage(req,res){
         return res.render("projects.njk",{projects:projects.games})
     },
-    project(req,res){
-        const project = projects.games.find(p => p.id === req.params.id)
-        return res.render("project.njk",{project})
+    async project(req,res){
+        try {
+            const project = projects.games.find(p => p.id === req.params.id)
+            const authors = projects.games.filter(p => {
+                if(p.author != project.author)
+                    return p;
+            })
+            const filtered = authors.slice(0,3);
+            return res.render("project.njk",{project,comments:filtered})
+            
+        } catch (err) {
+            console.error(err)
+        }
     }
 }
