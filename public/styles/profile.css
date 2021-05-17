@@ -2,7 +2,6 @@
     display:grid;
     grid-template-columns: 1fr 210px;
     width:100%;
-
 }
 
 .profile{
@@ -203,7 +202,7 @@ button .content{
     align-items: center;
 }
 
-.projects .projects-show .project-img img{
+.project-img img{
     width: 100%;
     border-radius: 8px;
 }

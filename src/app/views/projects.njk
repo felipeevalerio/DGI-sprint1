@@ -5,89 +5,33 @@
 {% endblock page%}
 
 {% block content %}
-<div class="container container-profile">
-    <div class="profile">
-        <div class="profile-first-part">
-            <div class="profile-image">
-                <img src="./assets/profile.jpg" alt="">
-            </div>
-            <div class="profile-role">
-                <button class="dev" type="button">
-                    <div class="content">
-                        <img src="./assets/dev.svg" alt="">
-                        <p>Desenvolvedor</p>
-                    </div>
-                </button>
-                <button class="dev" type="button">
-                    <div class="content">
-                        <img src="./assets/investor.svg" alt="">
-                        <p>Investidor</p>
-                    </div>
-                </button>
-                <button class="player" type="button">
-                    <div class="content">
-                        <img src="./assets/gamer.svg" alt="">
-                        <p>Gamer</p>
-                    </div>
-
-                </button>
-            </div>
+<div class="container container-projects">
+    <div class="buttons">
+        <div class="buttons-page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
         </div>
-        <div class="profile-second-part">
-            <div class="name field">
-                <h1>Lucas Monteiro</h1>
-                <a href="#">Editar Perfil</a>
-            </div>
-            <div class="email field">
-                <p>Email</p>
-                <input type="text" name="email" value="lucasmonteiro@hotmail.com" placeholder="Digite seu Email">
-            </div>
-            <div class="about field">
-                <p>Sobre Você</p>
-                <textarea name="about" id="" placeholder="Diga um pouco sobre você">Sou desenvolvedor na área de games a 30 anos.
-                </textarea>
-            </div>
-
-        </div>
+        <a href="#" class="new">Nova Publicação</a>
     </div>
-    <div class="projects">
-        <h3>Últimos Projetos</h3>
-        <div class="projects-show">
-            <div class="project">
+    <div class="projects-show-wrapper">
+        {% for project in projects %}
+        
+        <div class="project" id="{{project.id}}">
                 <div class="project-img">
-                    <a href="#">
-                        <img src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_cross_10656.jpg" alt="">
-                    </a>
+                    <a href="/discover/{{project.id}}"><img src="{{project.image}}" alt="Imagem de {{project.title}}"></a>
                 </div>
                 <div class="project-info">
-                    <p><strong>Rocket League</strong></p>
-                    <p><strong>Data:</strong>  12/02/21</p>
+                    <p>{{project.title}}</p>
+                    <p>{{project.author}}</p>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-img">
-                    <a href="#">
-                        <img src="https://images4.alphacoders.com/100/thumb-1920-1004017.png" alt="">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <p><strong>Sekiro</strong></p>
-                    <p><strong>Data:</strong>  27/03/21</p>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-img">
-                    <a href="#">
-                        <img src="https://s2.glbimg.com/f5UpJFXD2wQR3-HMNa927HxTd7c=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/r/7/mSrPjAQTq0uFHNHiBjpQ/fifa-21-intros.jpg" alt="">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <p><strong>Fifa 21</strong></p>
-                    <p><strong>Data:</strong>  11/01/21</p>
-                </div>
-            </div>
         </div>
+
+        {% endfor %}
     </div>
+
 </div>
 
 

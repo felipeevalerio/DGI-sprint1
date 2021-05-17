@@ -6,6 +6,10 @@ module.exports = {
         return res.render("profile.njk",{projects:filtered})
     },
     projectsPage(req,res){
-        return res.render("projects.njk")
+        return res.render("projects.njk",{projects:projects.games})
+    },
+    project(req,res){
+        const project = projects.games.find(p => p.id === req.params.id)
+        return res.render("project.njk",{project})
     }
 }

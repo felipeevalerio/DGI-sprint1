@@ -11,5 +11,6 @@ routes.get("/",(req,res) => {
 routes.get("/profile",ProjectsController.profilePage)
 
 routes.get("/discover",ProjectsController.projectsPage)
+routes.get("/discover/:id",ProjectsController.project)
 
 module.exports = routes;
