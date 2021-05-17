@@ -117,19 +117,19 @@
 }   
  
 
-.new{
+.container-project .new{
     display: flex;
     flex-direction: column;
     margin-top: 2.6rem;
 }
 
-.new > h4{
+.container-project .new > h4{
     color: var(--purple);
     font-size: 1.2rem;
     margin-bottom: 2.4rem;
 }
 
-.new textarea{
+.container-project .new textarea{
     height: 120px;
     width: 90%;
     align-self: center;
@@ -138,7 +138,7 @@
     padding: 1.2rem 2.4rem;
 }
 
-.new button{
+.container-project .new button{
     align-self: flex-end;
     margin: 1.2rem 2.4rem;
     padding: 1.2rem 2.4rem;
