@@ -7,19 +7,28 @@
 {% block content %}
 <div class="container container-forum">
     <div class="buttons">
+        <div class="buttons-page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+        </div>
         <a href="#" class="button">Novo tópico</a>
     </div>
     <div class="forum-show-wrapper">
         {% for topic in topics %}
-        <div class="topic" id="{{topic.id}}">
-            <div class="info">
-                <p>{{topic.title or "Tópico sem tema"}}</p>
-                <p>{{topic.date  or "Tópico sem data"}}</p>
+        <a href="/forum/{{topic.id}}">
+            <div class="topic" id="{{topic.id}}">
+                <div class="info">
+                    <p>{{topic.title or "Tópico sem tema"}}</p>
+                    <p>{{topic.date  or "Tópico sem data"}}</p>
+                </div>
+                <div class="status">
+                    <img src="/assets/{% if topic.status %}sucess{% else %}none{% endif %}.svg" alt="Fórum Fechado!">
+                </div>
             </div>
-            <div class="status">
-                <img src="" alt="Fórum Fechado!">
-            </div>
-        </div>
+        </a>
         {% endfor %}
     </div>
 </div>

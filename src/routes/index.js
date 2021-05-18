@@ -14,5 +14,5 @@ routes.get("/discover",ProjectsController.projectsPage)
 routes.get("/discover/:id",ProjectsController.project)
 
 routes.get("/forum",ForumController.forumPage)
-
+routes.get("/forum/:id",ForumController.forum)
 module.exports = routes;
