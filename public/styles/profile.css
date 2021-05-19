@@ -92,7 +92,7 @@ button .content{
     margin-top: 1.2rem;
 }
 
-.field{
+.profile .field{
     font-size: 1.6rem;
     color: var(--purple);
 }
@@ -126,7 +126,7 @@ button .content{
 
 }
 
-.about.field textarea{
+.profile .about.field textarea{
     height: 240px;
 }
 

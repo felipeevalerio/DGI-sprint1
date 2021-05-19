@@ -17,3 +17,8 @@ for(let role of roles){
             
     })
 }
+
+const header = document.querySelector("header")
+const actions = document.querySelector("header .actions")
+
+

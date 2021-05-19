@@ -16,6 +16,7 @@
 .container-home .info h1{
     font-size: 4.8rem;
     margin-bottom: 2.4rem;
+    text-align: center;
 }
 
 .container-home .info p{
@@ -36,14 +37,15 @@
     border-radius: 4px;
     font-size: 1.2rem;
     margin-top: 2.4rem;
-    transition:all 300ms ease
+    transition:all 300ms ease;
+    text-align: center;
 }
 
 .container-home .info a:hover{
     filter: brightness(.9);
 }
 
-.about{
+.container-home .about{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -51,26 +53,26 @@
     background-color:e7e7e7;
 }
 
-.about h2{
+.container-home .about h2{
     font-size: 2.4rem;
     color: var(--purple);
 }
 
-.about p{
+.container-home .about p{
     color: var(--text);
     text-align: center;
     margin-top: 2.4rem;
     font-size: 1.4rem;
 }
 
-.about .contact {
+.container-home .about .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4.8rem;
 }
 
-.about .contact h4{
+.container-home .about .contact h4{
     font-size: 1.6rem;
     color: var(--purple);
 }
