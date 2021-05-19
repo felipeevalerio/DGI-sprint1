@@ -35,6 +35,7 @@ header .page{
 header .page h1{
     font-size: 3.2rem;
     color: var(--background);
+    text-align: center;
 }
 
 .menu-section{

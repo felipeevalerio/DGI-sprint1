@@ -25,7 +25,7 @@ body{
     color: var(--text);
     min-height: 100vh;
     background: var(--background);
-    overflow:hidden;
+    overflow:hidden !important;
 }
 
 main{
@@ -42,6 +42,7 @@ textarea{
 
 button{
     outline: none;
+
 }
 .container{
     width: 100%;
@@ -55,6 +56,8 @@ button{
     font-weight: 600;
     border-radius: 4px;
     transition:all 200ms ease;
+    text-align: center;
+
 }
 
 .button:hover{
