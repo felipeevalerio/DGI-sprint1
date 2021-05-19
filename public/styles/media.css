@@ -90,10 +90,25 @@
     .menu-section.on .menu-toggle .three{
         transform:rotate(-45deg) translate(8px , -9px);
     }
+
+    /* PROFILE */
+
+    .container-profile{
+        display:block;
+    }
+
+    .container-profile .projects{
+        display: none;
+    }
+
 }
 
 @media(max-width:832px){
     
+    html{
+        font-size: 50%;
+    }
+
     header{
         padding: 2.2rem 6rem 2.2rem 8rem;
     }
@@ -105,6 +120,46 @@
     header .menu-section{
         grid-column: 3/4;
     }
+}
+
+@media(max-width:723px){
+
+    .menu {
+        width: 80%;
+    }
+
+    .container-profile .profile-first-part .profile-role{
+        display: none;
+    }
+
+    .profile-first-part,.profile-second-part{
+        display: block;
+        width: 90%;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+    }
+
+    .name.field a{
+        display: none;
+    }
+
+
+    .name.field h1{
+        text-align: center;
+        margin: 1.2rem auto;
+    }
+
+    .email.field,.about.field {
+        padding: 0 2.4rem 1.2rem;
+    }
+
+    .email.field input,.about.field textarea{
+        width: 100%;
+    }   
+
+
 }
 
 @media(max-width:556px){
