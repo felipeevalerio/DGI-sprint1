@@ -2,6 +2,8 @@
     display:grid;
     grid-template-columns: 1fr 210px;
     width:100%;
+    padding: 3.2rem 2.4rem;
+
 }
 
 .container-home .info{
@@ -39,4 +41,36 @@
 
 .container-home .info a:hover{
     filter: brightness(.9);
+}
+
+.about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color:e7e7e7;
+}
+
+.about h2{
+    font-size: 2.4rem;
+    color: var(--purple);
+}
+
+.about p{
+    color: var(--text);
+    text-align: center;
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+}
+
+.about .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.8rem;
+}
+
+.about .contact h4{
+    font-size: 1.6rem;
+    color: var(--purple);
 }
