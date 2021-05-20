@@ -12,7 +12,7 @@ module.exports = {
             if(top.id == id)
                 return top;
         })
-        const comments = games.games.slice(0,3)
+        const comments = games.games.slice(3,6)
         return res.render("topic.njk",{topic,comments})
     }
 }
